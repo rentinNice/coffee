@@ -1,0 +1,206 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forfait Café Croissant Paris</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Poppins', 'sans-serif']
+          },
+          colors: {
+            coffee: {
+              dark: '#2C1810',
+              medium: '#6F4E37',
+              light: '#C4A484',
+              cream: '#F5E6D3'
+            },
+            croissant: '#E8A317',
+            caramel: '#C68E17'
+          },
+          animation: {
+            float: "float 6s ease-in-out infinite",
+            glow: "glow 2s ease-in-out infinite alternate",
+            fadeUp: "fadeUp 1s ease forwards"
+          },
+          keyframes: {
+            float: {
+              "0%,100%": { transform: "translateY(0px)" },
+              "50%": { transform: "translateY(-15px)" }
+            },
+            glow: {
+              "0%": { boxShadow: "0 0 10px rgba(232,163,23,0.4)" },
+              "100%": { boxShadow: "0 0 25px rgba(232,163,23,0.8)" }
+            },
+            fadeUp: {
+              "0%": { opacity: 0, transform: "translateY(30px)" },
+              "100%": { opacity: 1, transform: "translateY(0)" }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      cursor: url('data:image/svg+xml;utf8,\
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">\
+      <text y="35" font-size="38">🥐</text></svg>') 16 16, auto;
+    }
+
+    .hero-bg {
+      background-image: url('paris_background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+.overlay {
+  background: linear-gradient(
+    rgba(44,24,16,0.50),
+    rgba(44,24,16,0.70)
+  );
+}
+
+    .glass {
+      background: rgba(245,230,211,0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+  </style>
+
+</head>
+
+<body class="font-sans text-coffee-cream">
+
+  <div class="hero-bg min-h-screen">
+    <div class="overlay min-h-screen">
+
+```
+  <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+
+    <h1 class="font-serif text-5xl md:text-7xl font-extrabold animate-fadeUp leading-tight">
+  <span class="text-croissant">Café & Croissant</span><br>
+  <span class="text-coffee-cream">Livrés Chaque Matin</span>
+</h1>
+
+    <p class="mt-6 text-xl md:text-2xl text-coffee-cream max-w-3xl mx-auto animate-fadeUp">
+      Paris • Bureaux dès 5 employés • Forfait mensuel jours ouvrés
+    </p>
+
+    <div class="mt-10 glass rounded-3xl p-8 max-w-3xl mx-auto animate-fadeUp">
+
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+
+        <div>
+          <div class="text-4xl font-bold text-croissant">4,00€</div>
+          <div class="text-sm mt-2">Par personne / jour</div>
+        </div>
+
+        <div>
+          <div class="text-4xl font-bold text-croissant">0€</div>
+          <div class="text-sm mt-2">Livraison</div>
+        </div>
+
+        <div>
+          <div class="text-4xl font-bold text-croissant">5+</div>
+          <div class="text-sm mt-2">Employés minimum</div>
+        </div>
+
+      </div>
+
+      <div class="mt-10 bg-coffee-dark/60 backdrop-blur-lg border border-croissant/30 rounded-3xl p-6 animate-glow">
+
+  <div class="flex items-center justify-center gap-6 flex-wrap">
+    <div class="text-center">
+      <div class="text-xs text-coffee-light">Coffee shop</div>
+      <div class="text-4xl font-bold text-red-400 line-through">
+        5,00€
+      </div>
+    </div>
+    <div class="text-3xl text-croissant font-bold animate-pulse">
+      →
+    </div>
+    <div class="text-center">
+      <div class="text-xs text-coffee-light">Avec nous</div>
+      <div class="text-5xl md:text-6xl font-extrabold text-croissant">
+        4,00€
+      </div>
+    </div>
+  </div>
+  <div class="mt-4 text-center text-sm text-coffee-light">
+    Livraison offerte incluse • Tous les jours ouvrés
+  </div>
+</div>
+
+
+      <button class="mt-8 bg-croissant text-coffee-dark font-bold px-10 py-4 rounded-full text-lg hover:scale-105 transition animate-glow">
+        Bloquer mon offre limitée
+      </button>
+
+    </div>
+
+  </section>
+  
+<section class="py-20 bg-coffee-medium/90">
+
+  <div class="max-w-3xl mx-auto px-6 text-center">
+
+    <div class="animate-fadeUp">
+
+      <h2 class="font-serif text-4xl md:text-5xl text-croissant font-bold">
+        Pourquoi votre équipe va adorer
+      </h2>
+
+      <ul class="mt-8 space-y-4 text-lg text-coffee-cream">
+
+        <li>Café premium chaque matin</li>
+        <li>Croissants frais et dorés</li>
+        <li>Livraison gratuite tous les jours ouvrés</li>
+        <li>Économies chaque mois</li>
+
+      </ul>
+
+      <button class="mt-10 bg-caramel px-10 py-4 rounded-full font-semibold hover:scale-105 transition">
+        Recevoir mon devis
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="py-20 text-center bg-coffee-dark">
+
+    <h2 class="font-serif text-4xl text-croissant font-bold">
+      Offre Limitée Paris
+    </h2>
+
+    <p class="mt-4 text-lg max-w-2xl mx-auto">
+      Transformez vos matins au bureau avec une touche parisienne.
+      Même rituel. Moins cher. Livraison offerte.
+    </p>
+
+  </section>
+
+  <footer class="text-center py-10 text-sm text-coffee-light bg-coffee-dark">
+    © 2025 Forfait Café Croissant Paris • Landing Page Google Ads
+  </footer>
+
+</div>
+```
+
+  </div>
+
+</body>
+</html>
